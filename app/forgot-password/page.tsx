@@ -1,8 +1,10 @@
 export default function ForgotPassword() {
   return (
     <div >
+    
       <h2> ลืมรหัสผ่าน </h2>
-      <p> โดย อติเมตก์ เติมรุ่งเรืองเลิศ </p>
+  
+ 
     </div>
   );
 }

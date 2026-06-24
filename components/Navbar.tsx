@@ -6,7 +6,7 @@ export default function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-    <nav className="navbar">
+        <nav className="navbar">
             <div className="nav-container">
 
                 <Link href="/" className="logo">
