@@ -67,6 +67,12 @@ export default function CategoryForm() {
         <div className="page">
             <div className="card">
                 <h1> เพิ่มหมวดหมู่</h1>
+                {message && (
+                    <p>
+                        {message}
+                    </p>
+                )}
+
                 <form onSubmit={handleSubmit}>
                     <label>ชื่อหมวดหมู่</label>
                     <input
@@ -82,8 +88,9 @@ export default function CategoryForm() {
                     <input
                         type="text"
                         value={slug}
-                        onChange={(event) => setSlug(event.target.value)}
-                        className="w-full rounded-lg border px-3 py-2"
+                        onChange={(event) =>
+                            setSlug(event.target.value)
+                        }
                         required
                     />
 
@@ -95,12 +102,6 @@ export default function CategoryForm() {
                         }
                         placeholder="กรอกรายละเอียด"
                     />
-
-                    {message && (
-                        <p>
-                            {message}
-                        </p>
-                    )}
 
                     <button
                         type="submit"

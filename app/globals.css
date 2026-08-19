@@ -180,6 +180,8 @@ body {
   }
 }
 
+
+
 .page {
   min-height: calc(100vh - 140px);
   display: flex;
@@ -198,6 +200,8 @@ body {
 .card h1 {
   margin-top: 0;
   text-align: center;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .card input {
@@ -225,4 +229,10 @@ body {
 
 .card textarea{
   width: 100%;
+}
+
+.card p{
+  color:#dc2626;
+  font-size: 18;
+  text-align: center;
 }

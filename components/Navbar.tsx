@@ -35,7 +35,6 @@ export default function Navbar() {
         router.refresh();
     }
 
-
     return (
         <nav className="navbar">
             <div className="nav-container">
@@ -52,7 +51,6 @@ export default function Navbar() {
                     <li>
                         <Link href="/" >Home</Link>
                     </li>
-
                     <li>
                         <Link href="/about">About</Link>
                     </li>
@@ -67,9 +65,17 @@ export default function Navbar() {
                     )}
 
                     {user?.role === "admin" && (
-                        <li>
-                            <Link href="/admin/users">Admin</Link>
-                        </li>
+                        <>
+                            <li>
+                                <Link href="/admin/users">Admin</Link>
+                            </li>
+                            <li>
+                                <Link href="/admin/categories">Category</Link>
+                            </li>
+                            <li>
+                                <Link href="/admin/products">Product</Link>
+                            </li>
+                        </>
                     )}
 
                     {!user ? (
@@ -84,10 +90,10 @@ export default function Navbar() {
                     ) : (
                         <>
                             <li>
-                               <Link href="/profile"> {user.name} ({user.role}) </Link> 
+                                <Link href="/profile"> {user.name} ({user.role}) </Link>
                             </li>
                             <li>
-                                <button onClick={logout}  className="btn-logout">
+                                <button onClick={logout} className="btn-logout">
                                     Logout
                                 </button>
                             </li>
