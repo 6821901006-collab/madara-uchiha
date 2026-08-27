@@ -57,6 +57,9 @@ export default function Navbar() {
                     <li>
                         <Link href="/contact">Contact</Link>
                     </li>
+                     <li>
+                        <Link href="/blogs">บทความ</Link>
+                    </li>
 
                     {user && (
                         <li>
@@ -67,7 +70,7 @@ export default function Navbar() {
                     {user?.role === "admin" && (
                         <>
                             <li>
-                                <Link href="/admin/users">Admin</Link>
+                                <Link href="/admin/blogs">เพิมบทความ</Link>
                             </li>
                             <li>
                                 <Link href="/admin/categories">Category</Link>
