@@ -60,6 +60,9 @@ export default function Navbar() {
                      <li>
                         <Link href="/blogs">บทความ</Link>
                     </li>
+                     <li>
+                        <Link href="/products">สินค้าทั้งหมด</Link>
+                    </li>
 
                     {user && (
                         <li>
